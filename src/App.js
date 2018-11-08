@@ -53,7 +53,9 @@ class App extends Component {
               Continue <i className="fa fa-long-arrow-right"></i>
             </button>
           </section>
-          <section className="h-25 d-flex justify-content-center align-items-center bg-dark text-white">More info</section>
+          <section className="h-25 d-flex justify-content-center align-items-center bg-dark text-white">
+          <p className="text-white-50">Looking for a designer? <u><a href="#" className="text-white">Learn more.</a></u></p>
+          </section>
         </header>
       </div>
     );
