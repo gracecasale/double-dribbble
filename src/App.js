@@ -57,6 +57,26 @@ class App extends Component {
           <p className="text-white-50">Looking for a designer? <u><a href="#" className="text-white">Learn more.</a></u></p>
           </section>
         </header>
+        <main className="h-100">
+          <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-center align-items-center">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+            <a href="#" className="nav-link text-dark font-weight-bold">
+            Popular <i className="fa fa-angle-down"></i>
+            </a>
+            </li>
+            <li className="nav-item">
+            <a href="#" className="nav-link text-dark font-weight-bold">
+            Shots <i className="fa fa-angle-down"></i>
+            </a>
+            </li>
+            <li className="nav-item">
+            <a href="#" className="nav-link text-dark font-weight-bold">Now <i className="fa fa-angle-down"></i>
+            </a>
+            </li>
+          </ul>
+          </nav>
+        </main>
       </div>
     );
   }
