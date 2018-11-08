@@ -4,8 +4,8 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div>
-        <header>
+      <div style={{ height: '100vh'}}>
+        <header className="h-25 border d-flex flex-column">
           <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <a className="navbar-brand" href="#">Dribbble</a>
             <ul className="navbar-nav mr-auto">
@@ -47,10 +47,14 @@ class App extends Component {
               <input className="form-control mr-sm-2" placeholder="Search" aria-label="Search" />
             </form>
           </nav>
-          <section>Call to Action</section>
-          <section>More info</section>
+          <section className="bg-black text-white d-flex flex-grow-1 flex-column justify-content-center align-items-center">
+          <p><span className="font-weight-bold">What are you working on? </span>Double-dribbble is where designers get inspired and hired.</p>
+            <button className="btn btn-sm btn-pink">
+              Continue <i className="fa fa-long-arrow-right"></i>
+            </button>
+          </section>
+          <section className="h-25 d-flex justify-content-center align-items-center bg-dark text-white">More info</section>
         </header>
-
       </div>
     );
   }
