@@ -4,7 +4,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div style={{ height: '100vh'}}>
+      <div style={{ height: '100vh' }}>
         <header className="h-25 border d-flex flex-column">
           <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <a className="navbar-brand" href="#">Dribbble</a>
@@ -48,38 +48,47 @@ class App extends Component {
             </form>
           </nav>
           <section className="bg-black text-white d-flex flex-grow-1 flex-column justify-content-center align-items-center">
-          <p><span className="font-weight-bold">What are you working on? </span>Double-dribbble is where designers get inspired and hired.</p>
+            <p><span className="font-weight-bold">What are you working on? </span>Double-dribbble is where designers get inspired and hired.</p>
             <button className="btn btn-sm btn-pink">
               Continue <i className="fa fa-long-arrow-right"></i>
             </button>
           </section>
           <section className="h-25 d-flex justify-content-center align-items-center bg-dark text-white">
-          <p className="text-white-50">Looking for a designer? <u><a href="#" className="text-white">Learn more.</a></u></p>
+            <p className="text-white-50">Looking for a designer? <u><a href="#" className="text-white">Learn more.</a></u></p>
           </section>
         </header>
-        <main className="h-100">
+        <main className="h-100 d-flex flex-column">
           <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-center align-items-center">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-            <a href="#" className="nav-link text-dark font-weight-bold">
-            Popular <i className="fa fa-angle-down"></i>
-            </a>
-            </li>
-            <li className="nav-item">
-            <a href="#" className="nav-link text-dark font-weight-bold">
-            Shots <i className="fa fa-angle-down"></i>
-            </a>
-            </li>
-            <li className="nav-item">
-            <a href="#" className="nav-link text-dark font-weight-bold">Now <i className="fa fa-angle-down"></i>
-            </a>
-            </li>
-          </ul>
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a href="#" className="nav-link text-dark font-weight-bold">
+                  Popular <i className="fa fa-angle-down"></i>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#" className="nav-link text-dark font-weight-bold">
+                  Shots <i className="fa fa-angle-down"></i>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#" className="nav-link text-dark font-weight-bold">Now <i className="fa fa-angle-down"></i>
+                </a>
+              </li>
+            </ul>
           </nav>
+          <section className="project-grid flex-grow-1">
+            <div className="card" style={{ width: '18rem'}}>
+              <img className="card-img-top" src="https://placeimg.com/180/100/tech" alt="Card image cap"/>
+                <div className="card-body">
+                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+</div>
+            </section>
+
         </main>
       </div>
-    );
-  }
-}
-
-export default App;
+        );
+      }
+    }
+    
+    export default App;
