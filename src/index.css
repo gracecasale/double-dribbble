@@ -25,5 +25,8 @@ code {
   color: var(--white);
 }
 
-
+/*text helpers */
+.text-small {
+  font-size: 0.8rem;
+}
 
