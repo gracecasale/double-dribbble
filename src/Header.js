@@ -4,7 +4,7 @@ import NavLink from './NavLink';
 function Header(props) {
     return (<header className="h-25 border d-flex flex-column">
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a className="navbar-brand" href="www.dribbble.com">Dribbble</a>
+        <a className="navbar-brand" href="#">Dribbble</a>
         <ul className="navbar-nav mr-auto">
          <NavLink title={"Shots"}/>
          <NavLink title={"Designers"}/>
@@ -14,7 +14,7 @@ function Header(props) {
          <NavLink title={"Hiring"}/>
 
           <li className="nav-item">
-            <a className="nav-link" href="www.dribbble.com">
+            <a className="nav-link" href="#">
               <i className="fa fa-ellipsis-h" aria-hidden="true"></i>
             </a>
           </li>
