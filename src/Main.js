@@ -1,4 +1,6 @@
 import React from 'react';
+import Card from './Card';
+
 
 function Main(props) {
     return (<main className="h-100 d-flex flex-column">
@@ -22,63 +24,15 @@ function Main(props) {
         </nav>
 
         <section className="project-grid flex-grow-1 p-4 d-flex flex-wrap justify-content-around">
-            <div>
-                <div className="card p-2" style={{ width: '16rem' }}>
-                    <img className="card-img-top" src="https://placeimg.com/180/180/tech" alt="Card image cap" />
-                    <div className="card-body d-flex justify-content-end p-1">
-                        <span><i className="fa fa-eye text-muted mx-1 text-small"> 2,108</i></span>
-                        <span><i className="fa fa-comment text-muted mx-1 text-small"> 2,108</i></span>
-                        <span><i className="fa fa-heart text-muted mx-1 text-small"> 2,108</i></span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div className="card p-2" style={{ width: '16rem' }}>
-                    <img className="card-img-top" src="https://placeimg.com/180/180/tech" alt="Card image cap" />
-                    <div className="card-body d-flex justify-content-end p-1">
-                        <span><i className="fa fa-eye text-muted mx-1 text-small"> 2,108</i></span>
-                        <span><i className="fa fa-comment text-muted mx-1 text-small"> 2,108</i></span>
-                        <span><i className="fa fa-heart text-muted mx-1 text-small"> 2,108</i></span>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div className="card p-2" style={{ width: '16rem' }}>
-                    <img className="card-img-top" src="https://placeimg.com/180/180/tech" alt="Card image cap" />
-                    <div className="card-body d-flex justify-content-end p-1">
-                        <span><i className="fa fa-eye text-muted mx-1 text-small"> 2,108</i></span>
-                        <span><i className="fa fa-comment text-muted mx-1 text-small"> 2,108</i></span>
-                        <span><i className="fa fa-heart text-muted mx-1 text-small"> 2,108</i></span>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div className="card p-2" style={{ width: '16rem' }}>
-                    <img className="card-img-top" src="https://placeimg.com/180/180/tech" alt="Card image cap" />
-                    <div className="card-body d-flex justify-content-end p-1">
-                        <span><i className="fa fa-eye text-muted mx-1 text-small"> 2,108</i></span>
-                        <span><i className="fa fa-comment text-muted mx-1 text-small"> 2,108</i></span>
-                        <span><i className="fa fa-heart text-muted mx-1 text-small"> 2,108</i></span>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div className="card p-2" style={{ width: '16rem' }}>
-                    <img className="card-img-top" src="https://placeimg.com/180/180/tech" alt="Card image cap" />
-                    <div className="card-body d-flex justify-content-end p-1">
-                        <span><i className="fa fa-eye text-muted mx-1 text-small"> 2,108</i></span>
-                        <span><i className="fa fa-comment text-muted mx-1 text-small"> 2,108</i></span>
-                        <span><i className="fa fa-heart text-muted mx-1 text-small"> 2,108</i></span>
-                    </div>
-                </div>
-            </div>
+            <Card src="https://placeimg.com/180/180/tech" views={2108} comments={2108} likes={2108} />
+            <Card src="https://placeimg.com/180/180/animals" views={1190} comments={2108} likes={2108}/>
+            <Card src="https://placeimg.com/180/180/architecture" views={786} comments={2108} likes={2108}/>
+            <Card src="https://placeimg.com/180/180/nature" views={1602} comments={2108} likes={2108}/>
+            <Card src="https://placeimg.com/180/180/people" views={642} comments={397} likes={15}/>
         </section>
     </main>
     );
-  }
+}
 
-  export default Main;
+export default Main;
 
