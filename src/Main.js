@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from './Card';
 
-
 function Main(props) {
     return (<main className="h-100 d-flex flex-column">
         <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-center align-items-center">

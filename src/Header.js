@@ -1,28 +1,18 @@
 import React from 'react';
+import NavLink from './NavLink';
 
 function Header(props) {
     return (<header className="h-25 border d-flex flex-column">
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <a className="navbar-brand" href="#">Dribbble</a>
         <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">
-            <a className="nav-link" href="#">Shots <span className="sr-only">(current)</span></a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">Designers</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">Teams</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">Community</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">Jobs</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">Hiring</a>
-          </li>
+         <NavLink title={"Shots"}/>
+         <NavLink title={"Designers"}/>
+         <NavLink title={"Teams"}/>
+         <NavLink title={"Community"}/>
+         <NavLink title={"Jobs"}/>
+         <NavLink title={"Hiring"}/>
+
           <li className="nav-item">
             <a className="nav-link" href="#">
               <i className="fa fa-ellipsis-h" aria-hidden="true"></i>
