@@ -9,7 +9,8 @@ function NavLink (props) {
 }
 
 NavLink.propTypes = {
-    title: PropTypes.array.isRequired
+    title: PropTypes.string.isRequired,
+    href: PropTypes.string
 };
 
 export default NavLink;
